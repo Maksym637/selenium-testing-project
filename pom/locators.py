@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 
 
 class HomePageLocators:
+    HOME_BUTTON = (By.XPATH, "//a[@href='/home']//i")
     REGISTER_BUTTON = (By.XPATH, "//a[@href='/register']")
     LOGIN_BUTTON = (By.XPATH, "//a[@href='/login']")
     BOOK_BUTTON = (By.XPATH, "//a[@href='/book']")
@@ -9,8 +10,7 @@ class HomePageLocators:
 
 
 class HelpComponentLocators:
-    DESCRIPTION_TITLE = (By.XPATH, "//div[@id='popup']//div[@class='popup__title']")
-    SOME_TEXT = (By.XPATH, "//div[@id='popup']//p[1]")
+    SOME_TEXT = (By.XPATH, "//div[@id='popup']//p[2]")
 
 
 class RegisterPageLocators:
