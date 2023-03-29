@@ -6,6 +6,9 @@ ALERT_MSG = "[INVALID PASSWORD OR USERNAME]"
 
 
 class TestLoginPage(BaseTest):
+    """
+    Class contains tests that are on the login page
+    """
 
     @parameterized.expand([
         ("undefined", "undefined", ALERT_MSG),
@@ -14,6 +17,10 @@ class TestLoginPage(BaseTest):
         (" ", " ", ALERT_MSG)
     ])
     def test_login_incorrect(self, username, password, expected_alert_msg):
+        """
+        This test verifies if an alert window with the appropriate 
+        error message appears after entering incorrect data
+        """
         home_page = HomePage(self.driver)
 
         actual_alert_msg = (

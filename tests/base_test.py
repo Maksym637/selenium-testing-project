@@ -1,10 +1,13 @@
-import unittest 
+import unittest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from utils.constants import TimeoutVariables, Urls
 
 
 class BaseTest(unittest.TestCase):
+    """
+    Superclass that initializes the driver (Chrome in my case)
+    """
 
     @classmethod
     def setUpClass(cls):

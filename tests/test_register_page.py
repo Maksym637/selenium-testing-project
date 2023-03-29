@@ -10,6 +10,9 @@ ALERT_MSG = [
 
 
 class TestRegisterPage(BaseTest):
+    """
+    Class contains tests that are on the registration page
+    """
 
     @parameterized.expand([
         ("user1", "user1", "user1", "user1@gmail.com",
@@ -19,8 +22,12 @@ class TestRegisterPage(BaseTest):
         ("user3", "user3", "user3", "user3@gmail.com",
          11111111, 11111111, 1212121212, ALERT_MSG[2])
     ])
-    def test_register_incorrect(self, username, first_name, last_name, email, 
+    def test_register_incorrect(self, username, first_name, last_name, email,
                                 password, confirmation, phone, expected_alert_msg):
+        """
+        This test verifies if an alert window with the appropriate error message appears
+        after entering incorrect data in the password and confirm password fields
+        """
         home_page = HomePage(self.driver)
 
         actual_alert_msg = (
