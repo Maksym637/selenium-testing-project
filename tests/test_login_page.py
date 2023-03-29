@@ -1,6 +1,6 @@
+from parameterized import parameterized
 from pom.pages import HomePage
 from tests.base_test import BaseTest
-from parameterized import parameterized
 
 ALERT_MSG = "[INVALID PASSWORD OR USERNAME]"
 

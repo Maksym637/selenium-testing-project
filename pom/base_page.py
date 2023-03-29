@@ -1,6 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.support import expected_conditions as EC
+from utils.constants import TimeoutVariables
 
 
 class BasePage:
@@ -8,7 +9,7 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
         self.alert = Alert(driver)
-        self.wait = WebDriverWait(driver, 20)
+        self.wait = WebDriverWait(driver, TimeoutVariables.EXPLICIT_WAIT.value)
     
     def wait_element_to_appear(self, locator):
         return self.wait.until(EC.visibility_of_element_located(locator))
