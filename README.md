@@ -14,8 +14,7 @@ See manual description of automated tests :
 - [Test # 4](https://github.com/Maksym637/selenium-testing-project/issues/4)
 - - -
 ### Prerequisites
-- In order to run project, firstly **set up** : [Back-end](https://github.com/Maksym637/flask-project) and [Front-End](https://github.com/Maksym637/frontend-project) parts 
-(description how to set up projects you can see in provided links)
+- In order to run project, firstly **set up** : [Back-end](https://github.com/Maksym637/flask-project) and [Front-End](https://github.com/Maksym637/frontend-project) parts
 - Clone repository
 - Create and activate a virtual environment by command :
 ```sh
