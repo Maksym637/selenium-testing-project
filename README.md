@@ -28,6 +28,6 @@ pip install -r requirements.txt
 ### Run tests
 Run all tests :
 ```sh
-python -m unittest tests
+python -m unittest
 ```
 - - -
