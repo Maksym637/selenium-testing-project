@@ -32,5 +32,5 @@ python -m unittest
 ```
 - - -
 ### Video recording
-[Click here to see video recording of tests](https://drive.google.com/drive/folders/1l_5r1uHP58DuEMOqg1dU72CSx1zg6cLJ?usp=sharing)
+[Click here to see video recording of tests](https://www.youtube.com/watch?v=AEd073_gTJQ)
 - - -
